@@ -1,0 +1,16 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.table {
+  background-color: rgb(112, 104, 189);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  height: 500px;
+  width: 800px;
+}
