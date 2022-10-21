@@ -5,7 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro cliente</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <form method="post" action="index.html" onsubmit=""></form>
-  <body></body>
+  <body>
+    <form method="post" action="" onsubmit="return enviarDados();"></form>
+    <table class="table">
+      <div class="table__container">
+        <tr>
+          <td class="table__produto">Produto:</td>
+          <td><input type="text" name="produto" id="produto" /></td>
+        </tr>
+        <tr>
+          <td class="table__codigo">Código:</td>
+          <td><input type="text" name="codigo" id="codigo" /></td>
+        </tr>
+        <tr>
+          <td class="table__quantidade">Quantidade:</td>
+          <td><input type="number" name="quantidade" id="quantidade" /></td>
+        </tr>
+        <tr>
+          <td class="table__valor">Valor:</td>
+          <td>
+            <input type="text" name="valor" pattern="[0-9]\.[0-9]" id="valor" />
+          </td>
+        </tr>
+        <tr>
+          <td class="table__imagem">Imagem:</td>
+          <td>
+            <input
+              type="file"
+              multiple=""
+              name="imagem"
+              id="imagem"
+              accept="image/*"
+            />
+          </td>
+          <td>
+            <input type="submit" value="enviarDados" onclick="enviarDados()" />
+          </td>
+        </tr>
+      </div>
+    </table>
+    <script>
+      function enviarDados() {
+        alert(jdfjkfajkds);
+      }
+
+      /*var produto = document.getElementById("produto").value;
+        var codigo = document.getElementById("codigo").value;
+        var quantidade = document.getElementById("quantidade").value;
+        var valor = document.getElementById("valor").value;
+        var imagem = document.getElementById("imagem").value;
+
+        if (produto.length < 20 || produto.length > 30)
+          alert("Tamanho do nome do produto invalido");
+      }*/
+    </script>
+  </body>
 </html>
