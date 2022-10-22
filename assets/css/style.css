@@ -21,3 +21,10 @@
   top: 12%;
   cursor: pointer;
 }
+
+.d-block {
+  position: relative;
+  left: 74%;
+  margin-top: 15%;
+  z-index: 1;
+}
