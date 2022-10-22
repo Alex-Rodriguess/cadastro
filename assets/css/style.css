@@ -4,8 +4,8 @@
 }
 
 .table {
-  background-color: rgb(112, 104, 189);
-  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(183, 181, 194);
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
   color: #fff;
   position: absolute;
@@ -13,4 +13,11 @@
   top: 20%;
   height: 500px;
   width: 800px;
+}
+
+.card {
+  position: absolute;
+  left: 20%;
+  top: 12%;
+  cursor: pointer;
 }
