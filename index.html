@@ -15,19 +15,20 @@
     <nav class="navbar navbar-light bg-warning">
       <a href="#" class="navbar-brand">Produtos</a>
     </nav>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="d-block"
-      width="15%"
-      height="200"
-      aria-label="Placeholder: Image cap"
-      preserveAspectRatio="xMidYMid slice"
-      viewBox="0 0 318 180"
-      style="font-size: 1.125rem; text-anchor: middle"
-    >
-      <rect width="100%" height="100%" fill="#868e96"></rect>
-      <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-    </svg>
+    <div class="view">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="d-block"
+        width="15%"
+        height="200"
+        aria-label="Placeholder: Image cap"
+        preserveAspectRatio="xMidYMid slice"
+        viewBox="0 0 318 180"
+        style="font-size: 1.125rem; text-anchor: middle">
+        <rect width="100%" height="100%" fill="#868e96"></rect>
+        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
+      </svg>
+    </div>
 
     <form method="post" action="" onsubmit="return enviarDados();"></form>
     <table class="table">
@@ -58,16 +59,16 @@
         </tr>
         <tr>
           <td class="table__imagem">Imagem:</td>
-          <td>
-            <input
-              type="file"
-              multiple=""
-              name="imagem"
-              id="imagem"
-              accept="image/*"
-            />
-          </td>
-          <td>
+            <td>
+              <input
+                type="file"
+                multiple=""
+                name="imagem"
+                id="imagem"
+                accept="image/*"
+                />
+              </td>
+            <td>
             <input
               type="submit"
               value="Enviar Imagem  "
