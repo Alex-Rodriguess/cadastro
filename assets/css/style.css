@@ -22,9 +22,12 @@
   cursor: pointer;
 }
 
-.d-block {
-  position: relative;
-  left: 74%;
-  margin-top: 15%;
+#preview {
+  position: absolute;
+  left: 70%;
+  top: 35%;
+  object-fit: fill;
+  width: 150px;
+  height: 120px;
   z-index: 1;
 }

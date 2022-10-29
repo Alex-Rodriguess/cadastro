@@ -15,19 +15,6 @@
     <nav class="navbar navbar-light bg-warning">
       <a href="#" class="navbar-brand">Produtos</a>
     </nav>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="d-block"
-      width="15%"
-      height="200"
-      aria-label="Placeholder: Image cap"
-      preserveAspectRatio="xMidYMid slice"
-      viewBox="0 0 318 180"
-      style="font-size: 1.125rem; text-anchor: middle"
-    >
-      <rect width="100%" height="100%" fill="#868e96"></rect>
-      <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-    </svg>
 
     <form method="post" action="" onsubmit="return enviarDados();"></form>
     <table class="table">
@@ -59,20 +46,13 @@
         <tr>
           <td class="table__imagem">Imagem:</td>
           <td>
-            <input
-              type="file"
-              multiple=""
-              name="imagem"
-              id="imagem"
-              accept="image/*"
-            />
+            <input type="file" name="imagem" id="img-input" />
           </td>
+          <div id="img-container">
+            <img id="preview" src="" />
+          </div>
           <td>
-            <input
-              type="submit"
-              value="Enviar Imagem  "
-              onclick="enviarDados()"
-            />
+            <input type="submit" value="Enviar" onclick="enviarDados()" />
           </td>
         </tr>
         <div class="col-md-2">
@@ -95,6 +75,19 @@
         if (produto.length < 3 || produto.length > 30)
           alert("Tamanho do nome do produto invalido");
       }
+
+      function readImage() {
+        if (this.files && this.files[0]) {
+          var file = new FileReader();
+          file.onload = function (e) {
+            document.getElementById("preview").src = e.target.result;
+          };
+          file.readAsDataURL(this.files[0]);
+        }
+      }
+      document
+        .getElementById("img-input")
+        .addEventListener("change", readImage, false);
     </script>
   </body>
 </html>
