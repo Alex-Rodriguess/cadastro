@@ -4,10 +4,11 @@
 }
 
 :root {
-  --azul: rgb(183, 181, 194);
+  --azul: rgb(90, 86, 116);
 }
 
 .table {
+  /*display: none;*/
   background-color: var(--azul);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
@@ -15,16 +16,17 @@
   position: absolute;
   left: 20%;
   top: 20%;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 100px;
   border-radius: 15px;
 }
 
-.card {
+.btn-produto {
   position: absolute;
   left: 20%;
   top: 12%;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 #preview {
@@ -42,4 +44,12 @@
   .view {
     display: none;
   }
+}
+*/
+
+#quantidade,
+#produto,
+#codigo,
+#valor {
+  border-radius: 10px;
 }

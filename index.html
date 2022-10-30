@@ -15,78 +15,56 @@
     <nav class="navbar navbar-light bg-warning">
       <a href="#" class="navbar-brand">Produtos</a>
     </nav>
+    <div class="container">
+      <form method="post" action="" onsubmit="return enviarDados();"></form>
+      <table class="table">
+        <div class="table__container">
+          <div id="img-container"><img id="preview" src="" /></div>
+          <tr>
+            <td class="table__produto">Produto:</td>
+            <td><input type="text" name="produto" id="produto" /></td>
+          </tr>
+          <tr>
+            <td class="table__codigo">Código:</td>
+            <td><input type="text" name="codigo" id="codigo" /></td>
+          </tr>
+          <tr>
+            <td class="table__quantidade">Quantidade:</td>
+            <td><input type="number" name="quantidade" id="quantidade" /></td>
+          </tr>
+          <tr>
+            <td class="table__valor">Valor:</td>
+            <td>
+              <input
+                type="text"
+                name="valor"
+                step="0.01"
+                id="valor"
+                placeholder="R$"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="table__imagem">Imagem:</td>
+            <td>
+              <input type="file" name="imagem" id="img-input" />
+            </td>
 
-    <form method="post" action="" onsubmit="return enviarDados();"></form>
-    <table class="table">
-      <div class="table__container">
-        <tr>
-          <td class="table__produto">Produto:</td>
-          <td><input type="text" name="produto" id="produto" /></td>
-        </tr>
-        <tr>
-          <td class="table__codigo">Código:</td>
-          <td><input type="text" name="codigo" id="codigo" /></td>
-        </tr>
-        <tr>
-          <td class="table__quantidade">Quantidade:</td>
-          <td><input type="number" name="quantidade" id="quantidade" /></td>
-        </tr>
-        <tr>
-          <td class="table__valor">Valor:</td>
-          <td>
-            <input
-              type="text"
-              name="valor"
-              step="0.01"
-              id="valor"
-              placeholder="R$"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="table__imagem">Imagem:</td>
-
-          <td>
-            <input type="file" name="imagem" id="img-input" />
-          </td>
-          <div id="img-container"><img id="preview" src="" />Imagem</div>
-          <td>
-            <input type="submit" value="Enviar" onclick="enviarDados()" />
-          </td>
-        </tr>
-        <div class="col-md-2">
-          <div class="card">
-            <div class="card-header bg-warning">
-              <h4>Add Produto</h4>
-            </div>
+            <td>
+              <input type="submit" value="Enviar" onclick="enviarDados()" />
+            </td>
+          </tr>
+          
           </div>
         </div>
+      </table>
+    </div>
+    <div class="col-md-2">
+      <div class="btn-produto">
+        <button id="show-or-hide" class="btn btn-secondary">
+          Add Produto
+        </button>
       </div>
-    </table>
-    <script>
-      function enviarDados() {
-        var produto = document.getElementById("produto").value;
-        var codigo = document.getElementById("codigo").value;
-        var quantidade = document.getElementById("quantidade").value;
-        var valor = document.getElementById("valor").value;
-        var imagem = document.getElementById("imagem").value;
-
-        if (produto.length < 3 || produto.length > 30)
-          alert("Tamanho do nome do produto invalido");
-      }
-
-      function readImage() {
-        if (this.files && this.files[0]) {
-          var file = new FileReader();
-          file.onload = function (e) {
-            document.getElementById("preview").src = e.target.result;
-          };
-          file.readAsDataURL(this.files[0]);
-        }
-      }
-      document
-        .getElementById("img-input")
-        .addEventListener("change", readImage, false);
-    </script>
+    <script src="./assets/JS/javascript.js"></script>
   </body>
 </html>
