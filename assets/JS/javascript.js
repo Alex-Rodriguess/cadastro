@@ -22,6 +22,8 @@ document
   .getElementById("img-input")
   .addEventListener("change", readImage, false);
 
+/**Funções de exibir e ocultar botões */
+
 function exibir() {
   document.getElementById("container").style.display = "block";
 }
