@@ -28,6 +28,14 @@
   border-radius: 5px;
 }
 
+.btn-cliente {
+  position: absolute;
+  left: 30%;
+  top: 12%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 #preview {
   background-color: #fff;
   position: absolute;

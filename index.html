@@ -19,44 +19,41 @@
       <form method="post" action="" onsubmit="return enviarDados();"></form>
       <table class="table">
         <div class="table__container">
-          <div id="img-container">
-            <img id="preview" /></div>
+        <div id="img-container"><img id="preview"/></div>
+          
           <tr>
-            <td class="table__produto">Produto:</td>
-            <td><input type="text" name="produto" id="produto" /></td>
-          </tr>
-          <tr>
-            <td class="table__codigo">Código:</td>
-            <td><input type="text" name="codigo" id="codigo" /></td>
-          </tr>
-          <tr>
-            <td class="table__quantidade">Quantidade:</td>
-            <td><input type="number" name="quantidade" id="quantidade" /></td>
-          </tr>
-          <tr>
-            <td class="table__valor">Valor:</td>
-            <td>
+             <td class="table__produto">Produto:</td>
+             <td><input type="text" name="produto" id="produto" /></td>
+           </tr>
+           <tr>
+             <td class="table__codigo">Código:</td>
+             <td><input type="text" name="codigo" id="codigo" /></td>
+           </tr>
+           <tr>
+             <td class="table__quantidade">Quantidade:</td>
+             <td><input type="number" name="quantidade" id="quantidade" /></td>
+           </tr>
+           <tr>
+             <td class="table__valor">Valor:</td>
+             <td>
               <input
                 type="text"
                 name="valor"
                 step="0.01"
                 id="valor"
                 placeholder="R$"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td class="table__imagem">Imagem:</td>
-            <td>
-              <input type="file" name="imagem" id="img-input" />
-            </td>
-
-            <td>
-              <input type="submit" value="Enviar" onclick="enviarDados()" />
-            </td>
-          </tr>
-          
-          
+               />
+              </td>
+           </tr>
+           <tr>
+             <td class="table__imagem">Imagem:</td>
+             <td>
+               <input type="file" name="imagem" id="img-input" />
+             </td>
+             <td>
+               <input type="submit" value="Enviar" onclick="enviarDados()" />
+             </td>
+           </tr>
         </div>
       </table>
     </div>
@@ -64,6 +61,11 @@
       <div class="btn-produto">
         <button id="show-or-hide" class="btn btn-secondary">
           Add Produto
+        </button>
+      </div>
+      <div class="btn-cliente">
+        <button id="show-or-hide" class="btn btn-secondary">
+          Add Cliente
         </button>
       </div>
     <script src="./assets/JS/javascript.js"></script>
