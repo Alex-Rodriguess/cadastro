@@ -22,13 +22,10 @@ document
   .getElementById("img-input")
   .addEventListener("change", readImage, false);
 
-var btn = document.querySelector("#show-or-hide");
-var container = document.querySelector(".container");
+function exibir() {
+  document.getElementById("container").style.display = "block";
+}
 
-btn.addEventListener("click", function () {
-  if (container.style.display === "none") {
-    container.style.display = "block";
-  } else {
-    container.style.display = "none";
-  }
-});
+function ocultar() {
+  document.getElementById("container").style.display = "none";
+}

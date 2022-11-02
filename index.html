@@ -15,7 +15,7 @@
     <nav class="navbar navbar-light bg-warning">
       <a href="#" class="navbar-brand">Produtos</a>
     </nav>
-    <div class="container">
+    <div id="container">
       <form method="post" action="" onsubmit="return enviarDados();"></form>
       <table class="table">
         <div class="table__container">
@@ -59,15 +59,16 @@
     </div>
     <div class="col-md-2">
       <div class="btn-produto">
-        <button id="show-or-hide" class="btn btn-secondary">
+        <button id="show-or-hide" class="btn btn-secondary" onclick ="exibir();"ondblclick ="ocultar();">
           Add Produto
         </button>
       </div>
       <div class="btn-cliente">
-        <button id="show-or-hide" class="btn btn-secondary">
+        <button id="show-or-hide2" class="btn btn-secondary" onclick = "ocultar();">
           Add Cliente
         </button>
       </div>
     <script src="./assets/JS/javascript.js"></script>
+    
   </body>
 </html>
