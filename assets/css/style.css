@@ -4,7 +4,7 @@
 }
 
 :root {
-  --azul: rgb(47, 137, 198);
+  --azul: rgb(137, 177, 203);
 }
 
 /* Tabela de cadastro de produtos*/
@@ -106,15 +106,7 @@
   transition: all 0.3s;
   transition-delay: 0.2s;
 }
-.box {
-  background-color: #fff;
-  position: absolute;
-  display: block;
-  width: 20cm;
-  height: 15cm;
-  left: 20%;
-  top: 20%;
-}
+
 
 #close {
   color: #fff;
@@ -124,10 +116,38 @@
   background-color: black;
   width: 50px;
   height: 50px;
-  left: 78%;
-  top: 20%;
+  left: 97%;
+  
 }
 
 #close:hover {
   opacity: 0.8;
 }
+
+/*Modal-cliente*/
+
+.box {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 20cm;
+  height: 15cm;
+  left: 20%;
+  top: 20%;
+  border-radius: 20px;
+  
+}
+  
+.form-cliente{
+  display: flex;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  
+}
+
+.form-control:hover{
+  border-color: blue;
+}
+
