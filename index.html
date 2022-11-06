@@ -12,101 +12,87 @@
 
 <body>
   <nav class="navbar navbar-light bg-warning">
-    <a href="#" class="navbar-brand">Produtos</a>
+    <a href="#" class="navbar-brand">Cadastro</a>
+    <br><br>
   </nav>
-    <div id="container">
-      <form method="post" action="" onsubmit="return enviarDados();"></form>
-      <div class="table__container"></div>
-      <table class="table">
-        <tr>
-          <div id="img-container"><img id="preview" /></div>
-          <td class="table__produto">Produto:</td>
-          <td><input type="text" name="produto" id="produto" /></td>
-        </tr>
-        <tr>
-          <td class="table__codigo">Código:</td>
-          <td><input type="text" name="codigo" id="codigo" /></td>
-        </tr>
-        <tr>
-          <td class="table__quantidade">Quantidade:</td>
-          <td><input type="number" name="quantidade" id="quantidade" /></td>
-        </tr>
-        <tr>
-          <td class="table__valor">Valor:</td>
-          <td>
-            <input type="text" name="valor" step="0.01" id="valor" placeholder="R$" />
-          </td>
-        </tr>
-        <tr>
-          <td class="table__imagem">Imagem:</td>
-          <td>
-            <input type="file" name="imagem" id="img-input" />
-          </td>
-          <td>
-            <input type="submit" value="Enviar" onclick="enviarDados()" />
-          </td>
-        </tr>
-    
-      </table>
+
+  <div class="btn-produto">
+    <button class="btn btn-primary"><a class="add-produto-link" href="#bg2">Add Produto</a>
+    </button>
+  </div>
+  <div class="btn-cliente">
+    <button class="btn btn-primary"><a class="add-cliente-link" href="#bg">Add Cliente</a>
+    </button>
+  </div>
+  <div class="btn-fornecedor">
+    <button class="btn btn-primary"><a class="add-fornecedor-link" href="#bg">Add Fornecedor</a>
+    </button>
+  </div>
+  <!--Criando um MODAL para o cadastro dos clientes-->
+
+  <div id="bg">
+    <div class="box">
+      <div class="navbar-modal bg-primary">Add Cliente</div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">Nome:</label>
+        <input type="text" class="form-control" placeholder="Digite o nome do cliente" id="inputDefault">
+      </div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">Telefone:</label>
+        <input type="tel" maxlength="11" class="form-control" placeholder="Digite o telefone do cliente"
+          id="inputDefault">
+      </div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">CPF:</label>
+        <input type="text" maxlength="11" class="form-control" placeholder="Digite o CPF do cliente" id="inputDefault">
+      </div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">E-mail:</label>
+        <input type="email" class="form-control" placeholder="Digite o e-mail do cliente" id="inputDefault">
+      </div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">Endereço:</label>
+        <input type="text" class="form-control" placeholder="Digite o endereço do cliente" id="inputDefault">
+      </div>
+      <div class="btn-submit--cadastro">
+        <button class="btn btn-lg btn-primary" type="button">Enviar cadastro</button>
+        <a href=""><button class="btn btn-lg btn-primary" type="button">Cancelar / Sair</button></a>
+      </div>
     </div>
   </div>
-  <div class="col-md-2">
-    <div class="btn-produto">
-      <button class="btn btn-primary" onclick="exibir();" ondblclick="ocultar();">
-        Add Produto
-      </button>
-    </div>
-    <div class="btn-cliente">
-      <button class="btn btn-primary"><a class="add-cliente-link" href="#bg">Add Cliente</a>
-        
-      </button>
-    </div>
-    <div class="btn-fornecedor">
-      <button class="btn btn-primary">
-        Fornecedor
-      </button>
-    </div>
-    <!--Criando um MODAL para o cadastro dos clientes-->
 
-    <div id="bg">
-      <div class="box">
-        
-        <div class="navbar-modal">Add Cliente
-          <nav class="navbar navbar-light bg-warning"><a href="" id="close">X</a></nav>
-          
-        </div>
-        <div class="form-cliente">
-          <label class="col-form-label mt-4" for="inputDefault">Nome:</label>
-          <input type="text" class="form-control" placeholder="Digite o nome do cliente" id="inputDefault">
-        </div>
-        <div class="form-cliente">
-          <label class="col-form-label mt-4" for="inputDefault">Telefone:</label>
-          <input type="tel" maxlength="11" class="form-control" placeholder="Digite o telefone do cliente" id="inputDefault">
-        </div>
-        <div class="form-cliente">
-          <label class="col-form-label mt-4" for="inputDefault">CPF:</label>
-          <input type="text" maxlength="11" class="form-control" placeholder="Digite o CPF do cliente" id="inputDefault">
-        </div>
-        <div class="form-cliente">
-          <label class="col-form-label mt-4" for="inputDefault">CEP:</label>
-          <input type="text" class="form-control" placeholder="Digite o CEP do cliente" id="inputDefault">
-        </div>
-        <div class="form-cliente">
-          <label class="col-form-label mt-4" for="inputDefault">Endereço:</label>
-          <input type="text" class="form-control" placeholder="Digite o endereço do cliente" id="inputDefault">
-        </div>
-        <div class="btn-submit--cadastro">
-          <button class="btn btn-lg btn-primary" type="button">Enviar cadastro</button>
-          <button class="btn btn-lg btn-primary" type="button">Cancelar / Sair</button>
-        </div>
-  
-          
-       
-       </div>
-
+  <!--Criando um MODAL para o cadastro dos PRODUTOS-->
+  <div id="bg2">
+    <div class="box2">
+      <div class="navbar-modal bg-primary">Add Produto</div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">Código:</label>
+        <input type="text" class="form-control" placeholder="Digite o código do produto" id="inputDefault">
       </div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">Nome:</label>
+        <input type="tel" maxlength="11" class="form-control" placeholder="Digite o nome do produto" id="inputDefault">
+      </div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">Descrição:</label>
+        <input type="text" maxlength="11" class="form-control" placeholder="Digite a descrição do produto"
+          id="inputDefault">
+      </div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">Quant:</label>
+        <input type="number" class="form-control" placeholder="Insira a quantidade em estoque" id="inputDefault">
+      </div>
+      <div class="form-cliente">
+        <label class="col-form-label mt-4" for="inputDefault">Valor:</label>
+        <input type="number" class="form-control" placeholder="Insira o valor unitário" id="inputDefault">
+      </div>
+      <div class="btn-submit--cadastro">
+        <button class="btn btn-lg btn-primary" type="button">Enviar cadastro</button>
+        <a href=""><button class="btn btn-lg btn-primary" type="button">Cancelar / Sair</button></a>
 
-    <script src="./assets/JS/javascript.js"></script>
+
+
+        <script src="./assets/JS/javascript.js"></script>
 </body>
 
 </html>

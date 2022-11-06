@@ -8,26 +8,3 @@ function enviarDados() {
   if (produto.length < 3 || produto.length > 30)
     alert("Tamanho do nome do produto invalido");
 }
-
-function readImage() {
-  if (this.files && this.files[0]) {
-    var file = new FileReader();
-    file.onload = function (e) {
-      document.getElementById("preview").src = e.target.result;
-    };
-    file.readAsDataURL(this.files[0]);
-  }
-}
-document
-  .getElementById("img-input")
-  .addEventListener("change", readImage, false);
-
-/**Funções de exibir e ocultar botões */
-
-function exibir() {
-  document.getElementById("container").style.display = "block";
-}
-
-function ocultar() {
-  document.getElementById("container").style.display = "none";
-}
