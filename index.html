@@ -13,7 +13,7 @@
 <body>
   <nav class="navbar navbar-light bg-warning">
     <a href="#" class="navbar-brand">Cadastro</a>
-    <br><br>
+
   </nav>
 
   <div class="btn-produto">
@@ -28,16 +28,21 @@
     <button class="btn btn-primary"><a class="add-fornecedor-link" href="#bg">Add Fornecedor</a>
     </button>
   </div>
+
+
   <!--Criando um MODAL para o cadastro dos clientes-->
+
 
   <div id="bg">
     <div class="box">
       <div class="navbar-modal bg-primary">Add Cliente</div>
       <div class="form-cliente">
-        <label class="col-form-label mt-4">Nome:</label>
-        <input type="text" class="form-control" placeholder="Digite o nome do cliente" id="nome">
+        <label class="col-form-label mt-4" for="nome">Nome:</label>
+        <input type="text" class="form-control" placeholder="Digite o nome do cliente" id="nome" name="nome" required
+          maxlength="40">
       </div>
       <div class="form-cliente">
+
         <label class="col-form-label mt-4">Telefone:</label>
         <input type="tel" maxlength="11" class="form-control" placeholder="Digite o telefone do cliente" id="input-tel">
       </div>
@@ -82,7 +87,8 @@
       </div>
       <div class="form-cliente">
         <label class="col-form-label mt-4">Valor:</label>
-        <input type="number" class="form-control" placeholder="Insira o valor unitário" id="input-val">
+        <input type="number" class="form-control" placeholder="Insira o valor unitário" id="input-val" required
+          minlength="4">
       </div>
       <div class="btn-submit--cadastro">
         <button class="btn btn-lg btn-primary" type="button" onclick="validar()">Enviar cadastro</button>
