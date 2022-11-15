@@ -4,7 +4,10 @@ function validar() {
   var quantidade = document.getElementById("input-qtd").value;
   var valor = document.getElementById("input-val").value;
 
-
+  if (produto = ""){
+    document.querySelector("input-prod").focus;
+  }
+}
   
 
 

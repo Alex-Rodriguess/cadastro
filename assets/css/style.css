@@ -7,36 +7,22 @@
   --azul: rgb(137, 177, 203);
 }
 
-.btn-produto {
-  position: absolute;
-  left: 20%;
-  top: 5%;
-  cursor: pointer;
-  border-radius: 5px;
+.navbar-brand{
+  
 }
 
-.btn-cliente {
-  position: absolute;
-  left: 30%;
-  top: 5%;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.btn-fornecedor {
-  position: absolute;
-  left: 40%;
-  top: 5%;
-  cursor: pointer;
-  border-radius: 5px;
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  
 }
 
 .btn:hover {
   color: rgb(5, 5, 5);
   background-color: rgb(130, 128, 128);
 }
-
-
 
 /*Cadastro de clientes*/
 
@@ -91,7 +77,6 @@
   border-color: rgb(136, 115, 115);
 }
 
-
 .form-control:hover{
   border-color: rgb(5, 5, 75);
 }
@@ -108,16 +93,10 @@
   
 }
 
-.btn-submit{
-  position:relative;
-  left: 50%;
-  
-}
-
 .navbar-modal{
   color: #fff;
   font-family: 'Arial';
-  font-size: 25px;
+  font-size: 15px;
   top: 15px;
   height: 50px;
   padding-left: 15px;
@@ -127,9 +106,8 @@
   display: flex;
   justify-content:space-evenly;
   position: relative;
-  bottom: -50px;
-  
-  
+  bottom: -2em;
+   
 }
 
 /*Modal - Cadastro de produtos*/
@@ -167,9 +145,10 @@
   border-radius: 20px;
 }
 
+
 @media screen and (max-width: 600px) {
   
-.box {
+/*.box {
       width: 9cm;
       height: 12cm;
       left: 10%;
@@ -198,7 +177,4 @@
       font-size: 18px;
       height: -10%
     }
-
-    .btn {
- 
-    }
+    

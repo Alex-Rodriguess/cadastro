@@ -14,32 +14,33 @@
   <nav class="navbar navbar-light bg-warning">
     <a href="#" class="navbar-brand">Cadastro</a>
 
+
+    <div class="btns">
+      <div class="btn-produto">
+        <button class="btn btn-primary"><a class="add-produto-link" href="#bg2">Add Produto</a>
+        </button>
+      </div>
+      <div class="btn-cliente">
+        <button class="btn btn-primary"><a class="add-cliente-link" href="#bg">Add Cliente</a>
+        </button>
+      </div>
+      <div class="btn-fornecedor">
+        <button class="btn btn-primary"><a class="add-fornecedor-link" href="#bg">Add Fornecedor</a>
+        </button>
+      </div>
+    </div>
   </nav>
 
-  <div class="btn-produto">
-    <button class="btn btn-primary"><a class="add-produto-link" href="#bg2">Add Produto</a>
-    </button>
-  </div>
-  <div class="btn-cliente">
-    <button class="btn btn-primary"><a class="add-cliente-link" href="#bg">Add Cliente</a>
-    </button>
-  </div>
-  <div class="btn-fornecedor">
-    <button class="btn btn-primary"><a class="add-fornecedor-link" href="#bg">Add Fornecedor</a>
-    </button>
-  </div>
-
-
   <!--Criando um MODAL para o cadastro dos clientes-->
-
 
   <div id="bg">
     <div class="box">
       <div class="navbar-modal bg-primary">Add Cliente</div>
       <div class="form-cliente">
+
         <label class="col-form-label mt-4" for="nome">Nome:</label>
-        <input type="text" class="form-control" placeholder="Digite o nome do cliente" id="nome" name="nome" required
-          maxlength="40">
+        <input type="text" class="form-control" placeholder="Digite o nome do cliente" id="nome" name="nome">
+
       </div>
       <div class="form-cliente">
 
@@ -59,8 +60,8 @@
         <input type=" text" class="form-control" placeholder="Digite o endereço do cliente" id="input-end">
       </div>
       <div class="btn-submit--cadastro">
-        <button class="btn btn-lg btn-primary" type="button">Enviar cadastro</button>
-        <a href=""><button class="btn btn-lg btn-primary" type="button">Cancelar / Sair</button></a>
+        <button class="btn btn-primary" type="button">Enviar cadastro</button>
+        <a href=""><button class="btn btn-primary" type="button">Cancelar / Sair</button></a>
       </div>
     </div>
   </div>
@@ -91,10 +92,11 @@
           minlength="4">
       </div>
       <div class="btn-submit--cadastro">
-        <button class="btn btn-lg btn-primary" type="button" onclick="validar()">Enviar cadastro</button>
+        <button class="btn btn-lg btn-primary" type="button" onkeyup="validar()">Enviar cadastro</button>
         <a href=""><button class="btn btn-lg btn-primary" type="button">Cancelar / Sair</button></a>
 
 
+        <!--Modal de cadastro de fornecedores -->
 
         <script src="./assets/JS/javascript.js"></script>
 </body>
