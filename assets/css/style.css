@@ -7,15 +7,11 @@
   --azul: rgb(137, 177, 203);
 }
 
-.navbar-brand{
-  
-}
-
 .btns{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  
+  gap: 20px;
+  width: 70%;
+  padding: 1em;
   
 }
 
@@ -40,12 +36,11 @@
   display: block;
 }
 
-#bg:target ~ .box {
+/*#bg:target ~ .box {
   top: 150px;
   transition: all 0.3s;
   transition-delay: 0.2s;
-}
-
+}*/
 
 /*Modal-cliente*/
 
