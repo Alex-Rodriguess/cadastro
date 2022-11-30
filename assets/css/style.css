@@ -10,7 +10,7 @@
 .btns{
   display: flex;
   gap: 20px;
-  width: 70%;
+  width: 90%;
   padding: 1em;
   
 }
@@ -36,14 +36,13 @@
   display: block;
 }
 
-/*#bg:target ~ .box {
+#bg:target ~ .box {
   top: 150px;
   transition: all 0.3s;
   transition-delay: 0.2s;
-}*/
+}
 
 /*Modal-cliente*/
-
 .box {
   padding: 0;
   margin: 0;
@@ -97,7 +96,7 @@
   padding-left: 15px;
 }
 
-.btn-submit--cadastro{
+.btn-submit-cadastro{
   display: flex;
   justify-content:space-evenly;
   position: relative;
