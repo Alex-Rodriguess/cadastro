@@ -15,9 +15,14 @@
   
 }
 
-.btn:hover {
+.btn:hover{
   color: rgb(5, 5, 5);
-  background-color: rgb(130, 128, 128);
+  background-color: rgb(48, 122, 187);
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
 }
 
 /*Cadastro de clientes*/
