@@ -21,6 +21,16 @@
   border-radius: 15px;
 }
 
+.table__container img {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: -50px;
+  
+ 
+  
+}
+
 .btn-produto {
   position: absolute;
   left: 20%;
