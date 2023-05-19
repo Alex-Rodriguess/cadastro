@@ -39,7 +39,7 @@
 }
 
 #preview {
-  background-color: #fff;
+  background-color: rgb(228, 228, 228);
   position: absolute;
   left: 65%;
   top: 35%;
